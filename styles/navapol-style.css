@@ -3,8 +3,9 @@ html {
     font-family: 'Open san', sans-serif;
     background-color: cornsilk;
 }
-body {
-    width: 600px;
+.container {
+    max-width: 1000px;
+    height: auto;
     margin: 0 auto;
     background-color:azure;
     padding: 0px 20px 20px 20px;
@@ -14,6 +15,9 @@ body {
 figcaption {
     text-align: center;
     font-size: small;
+}
+.image {
+    justify-content: space-between;
 }
 img {
     display: block;
@@ -32,9 +36,28 @@ ul {
 #heading {
     color: blue;
     text-shadow: 2px 2px black;
-    font-size: 40px;
+    font-size: 400%;
     text-align: center;
 }
 #popular {
     border: 4px dotted red;
+}
+@media screen and (max-width: 768px) {
+   .container {
+    max-width: 600px;
+    height: auto;
+   }
+   .header #heading {
+    font-size: calc(350% + 1.2vmin);
+   }
+   @media screen and (max-width: 480px) {
+    .container {
+     max-width: 300px;
+     height: auto;
+     background-color:snow;
+    }
+    .header #heading {
+     font-size: calc(300% + 0.5vmin);
+    }
+    }
 }
