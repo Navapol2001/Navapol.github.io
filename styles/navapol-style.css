@@ -49,8 +49,8 @@ ul {
    }
    .header #heading {
     font-size: calc(350% + 1.2vmin);
-   }
-   @media screen and (max-width: 480px) {
+   } 
+ @media screen and (max-width: 480px) {
     .container {
      max-width: 300px;
      height: auto;
@@ -58,6 +58,6 @@ ul {
     }
     .header #heading {
      font-size: calc(300% + 0.5vmin);
-    }
-    }
+    } 
+    } 
 }

@@ -1,0 +1,193 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+}
+.a4 {
+    position: relative;
+    width: 595px;
+    height: 780px;
+    background: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.par-right {
+    position: absolute;
+    width: 290px;
+    height: 730px;
+    left: 287px;
+    top: 23px;
+    background: rgba(231, 231, 231, 0.72);
+    color: #000000;
+}
+.head {
+    position: absolute;
+    width: 259px;
+    height: 360px;
+    left: 20px;
+    top: 23px;
+    background: #858EDC;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+    overflow:hidden;
+}
+.circle {
+    position: absolute;
+    width: 64px;
+    height: 60px;
+    left: -30px;
+    top: -8px;
+    border-radius: 50%;
+    background-color: transparent;
+    background: #FFFFFF;
+    box-shadow: inset 25px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.line {
+    position: absolute;
+    width: 210px;
+    height: 1px;
+    left: 16.29px;
+    top: 226.9px;
+    border: 1px solid #B0B3F5;
+}
+.poligon {
+    position: absolute;
+    width: 25px;
+    height: 23.45px;
+    left: 235.29px;
+    top: 213px;
+    border-right:25px solid #FFFFFF;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+img {
+    position: absolute;
+    width: 196px;
+    height: 188px;
+    left: 32px;
+    top: 15px;
+    border-radius: 50%;
+}
+.name p {
+    position: absolute;
+    width: 270px;
+    height: 156px;
+    left: 30px;
+    top: 30px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 40px;
+}
+.line2 {
+    position: absolute;
+    width: 230px;
+    height: 1px;
+    left: 30px;
+    top: 139px;
+    border: 1.5px solid gray;
+}
+h1 {
+    font-size: medium;
+    text-align: left;
+    line-height: 30px;
+}
+.me {
+    position: absolute;
+    left: 30px;
+    width: 240px;
+    height: auto;
+    top: 150px;
+}
+.me p {
+    text-align: left;
+    font-size: small;
+}
+.detail {
+    position: absolute;
+    left: 30px;
+    width: 270px;
+    height: auto;
+    top: 220px;
+}
+.detail li {
+    font-size: small;
+    text-align: left;
+    list-style-type: none;
+}
+.edu {
+    position: absolute;
+    left: 30px;
+    width: 270px;
+    height: auto;
+    top: 340px;
+}
+.edu p {
+    text-align: left;
+    font-size: small;
+}
+.act {
+    position: absolute;
+    left: 30px;
+    width: 240;
+    height: auto;
+    top: 440px;
+}
+.act p {
+    text-align: left;
+    font-size: small;
+}
+.desire {
+    position: absolute;
+    left: 40px;
+    width: 220;
+    height: auto;
+    top: 260px;
+}
+.desire h1 {
+    font-size: medium;
+    text-align: left;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.desire p {
+    text-align: left;
+    font-size: small;
+    color: #FFFFFF;
+}
+.skill {
+    position: absolute;
+    left: 40px;
+    width: 220;
+    height: auto;
+    top: 390px;
+}
+.skill p {
+    font-size: small;
+}
+#sk {
+    text-indent: 30px;
+}
+.softskill {
+    position: absolute;
+    left: 40px;
+    width: 220;
+    height: auto;
+    top: 520px;
+}
+.softskill li {
+    font-size: small;
+    margin-left: 40px;
+}
+.contact {
+    position: absolute;
+    left: 40px;
+    width: 220;
+    height: auto;
+    top: 620px;
+}
+.contact table {
+    font-size: small;
+    margin-left: 25px;
+}
