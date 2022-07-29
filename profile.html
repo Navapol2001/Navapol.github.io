@@ -8,12 +8,37 @@
     <title>Navapol's portfolio</title>
 </head>
 <body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#a4" target="_self">Home</a></li>
+            <li><a href="https://github.com/Navapol2001/Navapol2001.github.io/blob/main/styles/navapol-style.css">Github</a></li>
+            <li><a href="#inform" target="_self">Information</a></li>
+        </ul>
+    </div>
+    <div id="inform">
+        <h1>Input information</h1>
+        <form action="#">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <select name="years" id="years">
+                <option value="freshy">Freshy</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Seniot</option>
+            </select><br>
+            <input id="button" type="submit" value="Submit">
+        </form>
+    </div>
     <div class="a4">
         <div class="par-right">
-            <div class="name">
-                <p>Navapol Sombatteera</p>
-                <div class="line2"></div>
-            </div>
+            <header>
+                <div class="name">
+                    <p>Navapol Sombatteera</p>
+                    <div class="line2"></div>
+                </div>
+            </header>
             <div class="me">
                 <h1>About me</h1>
                 <p>I am a computer engineering student. Khon Kaen University, Thailand</p>
@@ -87,6 +112,10 @@
                         <td> navapol.s@kkumail.com</td>
                     </tr>
                 </table>
+            </div>
+            <div class="pic-link">
+                <a href="https://www.facebook.com/sombuttira/" target="_blank"><img id="fb" src="images/fb.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/oop_nvp/" target="_blank"><img id="int" src="images/int.png" alt="instagram"></a>
             </div>
         </div>
     </div>

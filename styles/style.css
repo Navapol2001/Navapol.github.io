@@ -4,15 +4,52 @@
     box-sizing: border-box;
 }
 body {
-    background-color: aliceblue;
+    background-color: rgb(229, 220, 238);
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color:slateblue;
+}
+.navbar li {
+    display: inline;
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+.navbar li a:hover:not(.avtive) {
+    background-color:gold;
+    color: black;
+}
+#inform {
+    position: absolute;
+    left: 620px;
+    top: 650px;
+}
+#button {
+    background-color:#858EDC;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 .a4 {
-    position: relative;
+    position: absolute;
     width: 595px;
     height: 780px;
     background: #FFFFFF;
     font-family:Arial, Helvetica, sans-serif;
 }
+/* separate 2 partitions on one A4 sheet */
 .par-right {
     position: absolute;
     width: 290px;
@@ -22,6 +59,14 @@ body {
     background: rgba(231, 231, 231, 0.72);
     color: #000000;
 }
+.par-left {
+    position: absolute;
+    width: 290px;
+    height: 730px;
+    top: 1.5px;
+    left: 1px;
+}
+/* component in purple box */
 .head {
     position: absolute;
     width: 259px;
@@ -61,6 +106,24 @@ body {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }
+.desire {
+    position: absolute;
+    left: 40px;
+    width: 220;
+    height: auto;
+    top: 260px;
+}
+.desire h1 {
+    font-size: medium;
+    text-align: left;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.desire p {
+    text-align: left;
+    font-size: small;
+    color: #FFFFFF;
+}
 img {
     position: absolute;
     width: 196px;
@@ -69,6 +132,13 @@ img {
     top: 15px;
     border-radius: 50%;
 }
+/* setting head topic all the same */
+h1 {
+    font-size: medium;
+    text-align: left;
+    line-height: 30px;
+}
+/* setting elements in right partition */
 .name p {
     position: absolute;
     width: 270px;
@@ -87,11 +157,6 @@ img {
     left: 30px;
     top: 139px;
     border: 1.5px solid gray;
-}
-h1 {
-    font-size: medium;
-    text-align: left;
-    line-height: 30px;
 }
 .me {
     position: absolute;
@@ -138,28 +203,10 @@ h1 {
     text-align: left;
     font-size: small;
 }
-.desire {
-    position: absolute;
-    left: 40px;
-    width: 220;
-    height: auto;
-    top: 260px;
-}
-.desire h1 {
-    font-size: medium;
-    text-align: left;
-    color: #FFFFFF;
-    line-height: 30px;
-}
-.desire p {
-    text-align: left;
-    font-size: small;
-    color: #FFFFFF;
-}
+/* setting elements in left partition */
 .skill {
     position: absolute;
     left: 40px;
-    width: 220;
     height: auto;
     top: 390px;
 }
@@ -172,7 +219,6 @@ h1 {
 .softskill {
     position: absolute;
     left: 40px;
-    width: 220;
     height: auto;
     top: 520px;
 }
@@ -183,11 +229,24 @@ h1 {
 .contact {
     position: absolute;
     left: 40px;
-    width: 220;
     height: auto;
     top: 620px;
 }
 .contact table {
     font-size: small;
     margin-left: 25px;
+}
+#fb {
+    position: absolute;
+    left: 70px;
+    width: 30px;
+    height: auto;
+    top: 700px;
+}
+#int {
+    position: absolute;
+    left: 110px;
+    width: 30px;
+    height: auto;
+    top: 700px;
 }
