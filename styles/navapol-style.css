@@ -50,6 +50,7 @@ img {
 @media screen and (max-width: 768px) {
     .box {
         width: 70%;
+        height: 50%;
     }
     #heading {
         font-size: 30px;
@@ -57,7 +58,11 @@ img {
     }
   }
 @media screen and (max-width: 375px) {
+    .box {
+        width: 70%;
+    }
     #heading {
+        text-align: center;
         font-size: 20px;
         text-shadow: 1px 1px black;
     }
