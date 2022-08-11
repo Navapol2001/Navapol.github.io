@@ -1,18 +1,17 @@
-const n = [];
-let num;
-let avg;
+const list_num = [];
+let number;
 do {
-    num = Number(prompt("Enter an integer (a negative integer to quit):"));
-    n.push(num);
-    if (num < 0) {
+    number = Number(prompt("Enter an integer (a negative integer to quit):"));
+    list_num.push(number);
+    if (number < 0) {
         break;
     }
-} while (Number.isInteger(num) == false || num > 0) {
-    var numbers = n.join(",").split(",").filter(Number).filter(x => x > -1);
+} while (Number.isInteger(number) == false || number > 0) {
+    var positive_num = list_num.join(",").split(",").filter(Number).filter(x => x > -1);
 }
-let displayStats = numbers.length == 0 ?
+let displayStats = positive_num.length == 0 ?
     () => alert("For the list that is empty, the average is 0, the maximum is 0, and the minimum is 0"):
-    () => computeAvg(numbers);
+    () => readInput(positive_num);
 displayStats();
 
 function computeAvg(n) {
@@ -20,11 +19,10 @@ function computeAvg(n) {
     for (i = 0; i < n.length; i++) {
         sum += parseInt(n[i]);
     }
-    avg = sum/n.length;
-    alert(avg.toFixed(2));
+    let avg = sum/n.length;
+    return avg.toFixed(2);
 }
-function showAns() {
-
-    alert("For the list " + numbers + " the average is " + avg);
+function readInput() {
+    alert("For the list " + positive_num + " the averae is " + computeAvg(positive_num) + " the minimum is " + Math.min(...positive_num) + ", and the maximum is " + Math.max(...positive_num));
 }
 
