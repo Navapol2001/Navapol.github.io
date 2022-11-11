@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 })
 
 function ready() {
-	let url = 'https://api.sheety.co/b17da76d0296c3ec007b31467e51ec3f/ตารางแข่งทีมชายKkuVolleyball’sNewGeneration/sheet1';
+	let url = 'https://api.sheety.co/8951affaddff192e2e8fdabbd7e6ad39/ตารางแข่งทีมชายKkuVolleyball’sNewGeneration/sheet1';
 	fetch(url)
 	.then((response) => response.json())
 	.then(json => {
