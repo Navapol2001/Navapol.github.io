@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU-VC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <header class="d-flex flex-wrap align-items-center bg-dark justify-content-center justify-content-md-between px-5 py-1">
+        <a href="/" class="d-flex align-items-center col-md-3 ms-5 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="images/logo_1.png" width="60" alt="">
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li id="navbar"><a href="index.html" target="_parent" class="nav-link px-2 text-warning">Home</a></li>
+            <li id="navbar"><a href="index.html#coming-match" target="_parent" class="nav-link px-2">Matches</a></li>  
+            <li id="navbar"><a href="result-page.html" target="_parent" class="nav-link px-2">Results</a></li>  
+            <li id="navbar"><a href="tournament-page.html" target="_parent" class="nav-link px-2">Tournament</a></li>  
+            <li id="navbar"><a href="news-page.html" class="nav-link px-2 ">News</a></li>
+            <li id="navbar"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+  
+        <div class="col-md-3 me-5 text-end">
+            <a href="/login/login.html" target="_parent"> <button type="button" class="btn btn-outline-secondary me-2">Login</button></a>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </header>
+      <!-- End NavBar -->
+       <!-- Hero -->
+       <div class="hero1 position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal text-white fw-semibold">TOURNAMENT</h1>
+          <p class="lead fw-normal text-white">Khon Kaen University Volleyball website</p>
+          <a id="braner" class="btn" href="#">Visit us</a>
+        </div>
+      </div>
+      <!-- End Hero -->
+
+      <!-- Contents -->
+
+      <div class="content-container tour-content-container">
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <h6>Student match</h6>
+                    <h2>Still <br>recruiting</h2>
+                    <div class="model" id="myModel">
+                        <div class="model-content">
+                            <span class="close">&times;</span>
+                            <h1>KKU Freshmen Game 2022</h1>
+                            <h3>รายละเอียดการเข้าร่วม</h3>
+                            <ul class="t1">เงื่อนไขนักกีฬา
+                                <li>1.เป็นนักศึกษามหาวิทยาลัยขอนแก่น</li>
+                                <li>2.เป็นนักศึกษาระดับปริญญาตรี</li>
+                                <li>3.มีรหัสนักศึกษาปัจจุบันเป็นรหัส 65</li>
+                                <li>4.สถานะนักศึกษาเป็น "ปกติ"</li><br>
+                                <li>สมาชิกทีม</li>
+                                <li>1.นักกีฬา 24 คน</li>
+                                <li>2.ผู้ฝึกสอน 1 คน</li>
+                                <li>3.ผู้ช่วยผู้ฝึกสอน 1 คน</li>
+                                <li>4.ผู้จัดการ 1 คน</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" id="btn">Tournament info <i class="fa fa-toggle-right"></i></a>
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                        <span class="progress-text">
+                            18/22 Teams entered
+                        </span>
+                    </div>
+                    <h6>25 July 2022</h6>
+                    <h2>KKU Freshmen Game <br>2022</h2>
+                    <button class="btn-tour" onclick="document.getElementById('id01').style.display='block'">Enter tournament</button>
+                </div>
+            </div>
+        </div>
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <h6>People match</h6>
+                    <h2>Still <br>recruiting</h2>
+                    <div class="model" id="myModel1">
+                        <div class="model-content">
+                            <span class="close1">&times;</span>
+                            <h1>KKU OPEN 2022</h1>
+                            <h3>รายละเอียดการเข้าร่วม</h3>
+                            <ul class="t1">เงื่อนไขนักกีฬา
+                                <li>1.เป็นประชาชน เพศชาย</li>
+                                <li>2.อายุไม่เกิน 30 ปี</li>
+                                <li>3.มีสัญชาติไทย</li>
+                                <li>4.ไม่มีรายชื่อเป็นนักกีฬาทีมชาย หรือลีกไดๆ</li><br>
+                                <li>สมาชิกทีม</li>
+                                <li>1.นักกีฬา 24 คน</li>
+                                <li>2.ผู้ฝึกสอน 1 คน</li>
+                                <li>3.ผู้ช่วยผู้ฝึกสอน 1 คน</li>
+                                <li>4.ผู้จัดการ 1 คน</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" id="btn1">Tournament info <i class="fa fa-toggle-right"></i></a>
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+                        <div class="progress2"></div>
+                        <span class="progress-text">
+                            9/16 Teams entered
+                        </span>
+                    </div>
+                    <h6>7 September 2022</h6>
+                    <h2>KKU OPEN 2022</h2>
+                    <button class="btn-tour" onclick="document.getElementById('id01').style.display='block'">Enter tournament</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="content-container tour-content-container">
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <h6>Student match</h6>
+                    <h2>No <br>recruiting</h2>
+                    <a href="#">Tournament info <i class="fa fa-toggle-right"></i></a>
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+                        <div class="progress3"></div>
+                        <span class="progress-text">
+                            22/22 Teams entered
+                        </span>
+                    </div>
+                    <h6>10 August 2022</h6>
+                    <h2>KKU League 2022</h2>
+                    <button class="btn btn-secondary btn-tour" disabled>Enter tournament</button>
+                </div>
+            </div>
+        </div>
+        <div class="not-coming-soon courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <h6>Student match</h6>
+                    <h2>JULY 2022</h2>
+                    <a href="#">Tournament info <i class="fa fa-toggle-right"></i></a>
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                        <span class="progress-text">
+                            18/22 Teams entered
+                        </span>
+                    </div>
+                    <h6>25 July 2022</h6>
+                    <h2>KKU Freshmen Game <br>2022</h2>
+                    <button class="btn-tour">Enter tournament</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- pop-up -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Tournament entering</h1>
+            <!-- <p>Please fill in this form to create an account.</p> -->
+            <hr>
+            <label for="email"><b>Name of Faculty</b></label>
+            <input type="text" placeholder="Enter faculty" name="email" required>
+      
+            <label for="psw"><b>Tournament Password</b></label>
+            <input type="password" placeholder="Enter your faculty's tournament password" name="psw" required>
+      
+            <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required> -->
+            
+            <!-- <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+      
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Enter</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      
+      
+
+      <!-- End Contents -->
+
+      <!-- Footer -->
+
+      <footer class="bg-dark">
+        <div class="container">
+          <p>&copy; KKU-VC 2022. All rights reserved.</p>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+    
+    <script src="js/tournament-info.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

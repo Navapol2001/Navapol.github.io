@@ -1,35 +1,140 @@
 <!DOCTYPE html>
-<html>
-   <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Navapol's example page</title>
-       <link href="styles/navapol-style.css" rel="stylesheet" type="text/css">
-   </head>
-   <body>
-      <div class="box">
-         <h1 id="heading" >
-            Jao Na Kor Pen Hero Dai Na!
-         </h1>
-         <div class="image">
-            <img src="images/meme.jpg" width="50%" height="50%" alt="My test image">
-          <figure>
-            <img src="images/ted.jpg" width="50%" height="50%" alt="My test image">
-            <figcaption>TEDxKhonKaenU commimg soon!</figcaption>
-          </figure>
-         </div>
-         <div class="main">
-            <p1><br><br>
-               Midoriya appreciated
-              </p1>
-              <ul>
-                   <li id="popular" >อนิเมะโชเน็น</li>
-                   <li>ค่ายเยาวชน</li>
-                   <li id="popular" >กราฟฟิกดีไซน์</li>
-              </ul>
-             <p2>If you wanna know more about this Anime <a target="_blank" href="https://myheroacademia.fandom.com/wiki/My_Hero_Academia_(Anime)">My Hero Academia</a></p2> 
-         </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU VC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+    <script src="js/match.js"></script>
+    <script id="match-template" type="text/x-handlebars-template">
+        <div class="coming-match">
+          <h2 class="tournament-name">
+              ตารางการแข่งขัน<br><span id="tour-name">KKU VOLLEYBALL’S NEW GENERATION ทีมชาย</span></h2>
+          <div class="match-spacer"></div>
+          <h2 class="ps">หมายเหตุ: ตารางการแข่งขันในรอบต่อไปจะอัปเดตหลังจากเสร็จสิ้นการแข่งขันของรอบก่อนหน้า</h2>
+          <div class="match-spacer"></div>
+          {{#each this as |tournament|}}
+            {{#each this as |match|}}
+            {{#if match.วันที่}}
+              <h2 class="match-date">{{match.วันที่}}</h2>
+              <div class="semi-spacer"></div>
+            {{/if}}
+              <div class="mx-auto w-50 bg-white rounded-5 text-center p-2 border-bottom border-warning border-5">
+                <h1 class="text-balck"><span class="text-right">คู่ที่ {{match.คู่ที่}}</span>
+                   {{match.ทีม1}} vs {{match.ทีม2}}</h1>
+                <p class="text-balck">{{match.สนาม}}</p>
+                {{#if match.หมายเหตุ}}
+                  <h2 class="text-black small">{{match.หมายเหตุ}}</h2>
+                {{/if}}
+              </div>
+            {{/each}}
+            <div class="match-spacer"></div>
+		      {{/each}}
+          
+          <div class="semi-spacer"></div>
+          
+          <div class="match-spacer"></div>
+        </div>
+    </script>
+</head>
+<body>
+    <!-- NavBar -->
+    <header class="d-flex flex-wrap align-items-center bg-dark justify-content-center justify-content-md-between px-5 py-1">
+        <a href="/" class="d-flex align-items-center col-md-3 ms-5 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="images/logo_1.png" width="60" alt="">
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li id="navbar"><a href="index.html" target="_parent" class="nav-link px-2 text-warning">Home</a></li>
+            <li id="navbar"><a href="index.html#coming-match" target="_parent" class="nav-link px-2">Matches</a></li>  
+            <li id="navbar"><a href="result-page.html" target="_parent" class="nav-link px-2">Results</a></li>  
+            <li id="navbar"><a href="tournament-page.html" target="_parent" class="nav-link px-2">Tournament</a></li>  
+            <li id="navbar"><a href="news-page.html" class="nav-link px-2 ">News</a></li>
+            <li id="navbar"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+  
+        <div class="col-md-3 me-5 text-end">
+          <a href="/login/login.html" target="_parent"> <button type="button" class="btn btn-outline-secondary me-2">Login</button></a>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </header>
+      <!-- End NavBar -->
+
+      <!-- Hero -->
+      <div class="hero1 position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal text-white fw-semibold">KKU VC</h1>
+          <p class="lead fw-normal text-white">Khon Kaen University Volleyball website</p>
+          <a id="braner" class="btn" href="#">Visit us</a>
+        </div>
       </div>
-   </body>
+      <!-- End Hero -->
+
+      <div class="semi-spacer"></div>
+      <!-- Contents -->
+  
+      <div id="content-container">
+
+      <!-- Matches -->
+      <div id="coming-match">
+        <div id="nomatch">ไม่มีรายการแข่งขัน</div>
+      </div>
+      <!-- ENd of Matches -->
+
+        <div class="semi-spacer"></div>
+
+         <!-- News -->
+         <h1 class="main-topics">Daily News</h1>
+        <div class="wrapper">
+          <div class="card2">
+            <img src="images/hero-bg.jpg">
+            <div class="info">
+              <h1>First News</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="images/hero-bg-3.jpg">
+            <div class="info">
+              <h1>Second News</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="images/hero-bg-2.jpg">
+            <div class="info">
+              <h1>Third News</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 pb-5" style="text-align: center; background-color: #240046;">
+          <button type="button" class="btn btn-warning text-dark">Read More</button>
+        </div>
+        <!-- End News -->
+        <div class="gab-spacer"></div>
+        
+      </div>
+      <!-- End Contents -->
+      
+      <!-- Footer -->
+      <footer class="bg-dark">
+        <div class="container">
+          <p>&copy; KKU-VC 2022. All rights reserved.</p>
+        </div>
+      </footer>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

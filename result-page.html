@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU VC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+    <script src="js/result.js"></script>
+    <script id="result-template" type="text/x-handlebars-template">
+        <div class="coming-match">
+          <h2 class="tournament-name">
+              <span id="tour-name">รายการ KKU VOLLEYBALL’S NEW GENERATION ทีมชาย</span></h2>
+          <div class="match-spacer"></div>
+          <h2 class="ps">หมายเหตุ: ผลการแข่งขันในแต่ละรอบจะอัปเดตหลังจากเสร็จสิ้นการแข่งขันรอบนั้น ๆ</h2>
+          <div class="match-spacer"></div>
+          {{#each this as |tournament|}}
+            {{#each this as |match|}}
+            {{#if match.วันที่}}
+              <h2 class="match-date">{{match.วันที่}}</h2>
+              <div class="semi-spacer"></div>
+            {{/if}}
+              <div class="mx-auto w-50 bg-white rounded-5 text-center p-2 border-bottom border-warning border-5">
+                <h1 class="text-balck"><span class="text-right">คู่ที่ {{match.คู่ที่}}</span>
+                   {{match.ทีม1}} vs {{match.ทีม2}}</h1>
+                <p class="text-balck">ผลการแข่งขัน: {{match.ผลการแข่งขัน}}</p>
+              </div>
+            {{/each}}
+            <div class="match-spacer"></div>
+		      {{/each}}
+          
+          <div class="semi-spacer"></div>
+          
+          <div class="match-spacer"></div>
+        </div>
+    </script>
+</head>
+<body>
+    <!-- NavBar -->
+    <header class="d-flex flex-wrap align-items-center bg-dark justify-content-center justify-content-md-between px-5 py-1">
+        <a href="/" class="d-flex align-items-center col-md-3 ms-5 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="images/logo_1.png" width="60" alt="">
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li id="navbar"><a href="index.html" target="_parent" class="nav-link px-2 text-warning">Home</a></li>
+            <li id="navbar"><a href="index.html#coming-match" target="_parent" class="nav-link px-2">Matches</a></li>  
+            <li id="navbar"><a href="result-page.html" target="_parent" class="nav-link px-2">Results</a></li>  
+            <li id="navbar"><a href="tournament-page.html" target="_parent" class="nav-link px-2">Tournament</a></li>  
+            <li id="navbar"><a href="news-page.html" class="nav-link px-2 ">News</a></li>
+            <li id="navbar"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+  
+        <div class="col-md-3 me-5 text-end">
+          <a href="/login/login.html" target="_parent"> <button type="button" class="btn btn-outline-secondary me-2">Login</button></a>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+    </header>
+      <!-- End NavBar -->
+
+    <!-- Hero -->
+    <div class="hero1 position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal text-white fw-semibold">RESULTS</h1>
+          <p class="lead fw-normal text-white">Khon Kaen University Volleyball website</p>
+          <a id="braner" class="btn" href="#">Visit us</a>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <div class="semi-spacer"></div>
+
+    <!-- Contents -->
+    <div id="content-container">
+
+    <!-- Results -->
+      <div id="result-content">
+        <div id="noresult">ยังไม่ประกาศผลแข่งขัน</div>
+      </div>
+      <!-- End of Results -->
+
+        <div class="semi-spacer"></div>
+        <div class="gab-spacer"></div>
+        
+      </div>
+      <!-- End Contents -->
+      
+      <!-- Footer -->
+      <footer class="bg-dark">
+        <div class="container">
+          <p>&copy; KKU-VC 2022. All rights reserved.</p>
+        </div>
+      </footer>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
